@@ -1,0 +1,2 @@
+GET https://graph.microsoft.com/v1.0/users?$select=displayName,mail,identities,otherMails,emailAddress&$filter=createdDateTime ge 2022-09-23T12:03:00Z
+Authorization: Bearer {ACCESS-TOKEN}

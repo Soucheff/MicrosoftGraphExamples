@@ -1,0 +1,21 @@
+POST https://graph.microsoft.com/v1.0/users/{USER-UPN/ID}/sendMail
+Authorization: Bearer {ACCESS-TOKEN}
+Content-Type: application/json
+
+{
+  "message": {
+    "subject": "Meet for lunch?",
+    "body": {
+      "contentType": "Text",
+      "content": "The new cafeteria is open."
+    },
+    "toRecipients": [
+      {
+        "emailAddress": {
+          "address": "pedro.soucheff@corp.soucheff.com.br"
+        }
+      }
+    ]
+  },
+  "saveToSentItems": "false"
+}

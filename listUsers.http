@@ -1,0 +1,2 @@
+GET https://graph.microsoft.com/v1.0/users?$select=displayName,mail,identities,otherMails,emailAddress
+Authorization: Bearer {ACCESS-TOKEN}
